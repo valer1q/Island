@@ -27,22 +27,3 @@ mvn test
 
 ---
 
-## Результаты тестирования (скриншоты)
-
-Скриншоты положите в:
-
-`docs/test-results/`
-
-и добавьте/обновите ссылки в README:
-
-- `docs/test-results/unit-tests.png`
-- `docs/test-results/functional-tests.png`
-- `docs/test-results/all-tests.png` (опционально)
-
----
-
-## Примечание
-
-Тесты написаны под JUnit 5 и Mockito. Они используют моки для `Plant`/`Animal`, чтобы:
-- управлять `isAlive()`, `getSymbol()`, `getGrowthStage()`, `getType()`;
-- сделать тесты стабильными и не зависеть от случайности/сложных конструкторов.
